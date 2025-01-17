@@ -25,12 +25,32 @@
             line-height: 1.6;
         }
 
-        header {
-            background-color: #003366;
+        header.hero-section {
+            background-color: #003366; /* Azul escuro */
             color: #fff;
-            padding: 30px 0;
+            padding: 50px 0; /* Mais espaçamento */
             text-align: center;
+            font-family: 'Arial', sans-serif;
         }
+
+        header.hero-section .main-title {
+            font-size: 3rem; /* Tamanho maior para destaque */
+            font-weight: bold; /* Para impacto */
+            margin-bottom: 15px; /* Espaço entre título e subtítulo */
+        }
+
+        header.hero-section .subtitle {
+            font-size: 1.5rem; /* Menor que o título */
+            font-weight: 300; /* Aparência mais leve */
+            margin-bottom: 20px; /* Espaço entre subtítulo e tagline */
+        }
+
+        header.hero-section .tagline {
+            font-size: 1.25rem; /* Texto menor */
+            font-style: italic; /* Adiciona sofisticação */
+            opacity: 0.85; /* Torna o texto mais sutil */
+        }
+
 
         header h1 {
             font-size: 3rem;
@@ -202,11 +222,11 @@
     
 </head>
 <body>
-    <header>
+    <header class="hero-section">
         <div class="container">
-            <h1>BioRev</h1>
-            <h2>Excelência em Soluções Acadêmicas</h2>
-            <p>Transformamos suas ideias em resultados profissionais.</p>
+            <h1 class="main-title">BioRev</h1>
+            <h2 class="subtitle">Excelência em Soluções Acadêmicas</h2>
+            <p class="tagline">Transformamos suas ideias em resultados profissionais.</p>
         </div>
     </header>
 
@@ -232,9 +252,11 @@
     <section class="container my-5">
         <h2 style="text-align: center; margin-bottom: 20px;">Galeria</h2>
         <div class="gallery">
-            <img src="imagens/imagem1.png" alt="Imagem 1" class="gallery-img" onclick="openModal('imagens/imagem1.png')">
-            <img src="imagens/imagem2.png" alt="Imagem 2" class="gallery-img" onclick="openModal('imagens/imagem2.png')">
-            <img src="imagens/imagem3.png" alt="Imagem 3" class="gallery-img" onclick="openModal('imagens/imagem3.png')">
+            <img src="imagens/imagem1.jpeg" alt="Imagem 1" class="gallery-img" onclick="openModal('imagens/imagem1.jpeg')">
+            <img src="imagens/imagem2.jpeg" alt="Imagem 2" class="gallery-img" onclick="openModal('imagens/imagem2.jpeg')">
+            <img src="imagens/imagem3.jpeg" alt="Imagem 3" class="gallery-img" onclick="openModal('imagens/imagem3.jpeg')">
+            <img src="imagens/imagem4.jpeg" alt="Imagem 4" class="gallery-img" onclick="openModal('imagens/imagem4.jpeg')">
+            <img src="imagens/imagem5.jpeg" alt="Imagem 5" class="gallery-img" onclick="openModal('imagens/imagem5.jpeg')">
         </div>
     </section>
 
